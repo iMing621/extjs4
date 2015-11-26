@@ -77,7 +77,7 @@ Ext.create('Ext.FormPanel', {
 					xtype: 'datepicker',
 					fieldLabel: '搭乘日期',
 					minDate: new Date(),
-					maxDate: new Date() + 45
+					maxDate: new Date(new Date().getFullYear(), new Date().getMonth()+1, new Date().getDate()+45)
 				},{
 					id: 'rg-fromtime',
 					xtype: 'radiogroup',
