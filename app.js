@@ -109,8 +109,6 @@ Ext.create('Ext.FormPanel', {
 					text: 'Query',
 					formBind: true,
 					handler: function(btn, evt){
-						//console.debug(Ext.getCmp('rg-fromstation').getChecked()[0].inputValue);
-						//console.debug(Ext.getCmp('searchdate').getValue());
 						doQuery();
 					}
 				}]
@@ -140,5 +138,26 @@ function doQuery() {
 		'&fromtime='    + fromtime +
 		'&totime='      + totime;
 
-	window.open(url + params, 100, 100);
+	//window.open(url + params, 100, 100);
+
+	Ext.Ajax.request({
+		url: url + params,
+		method: 'GET',
+		timeout: 60000,
+/*		params:
+		{
+			id: 1 // loads student whose Id is 1
+		},*/
+/*		headers:
+		{
+			'Content-Type': 'application/json'
+		},*/
+		success: function (response) {
+			Ext.getDom('center').innerHTML = response.responseText;
+		},
+		failure: function (response) {
+			Ext.Msg.alert('Status', 'Request Failed.');
+
+		}
+	});
 }
