@@ -14,28 +14,28 @@ Ext.create('Ext.FormPanel', {
 						{
 							boxLabel: '汐止',
 							name: 'fromstation',
-							inputValue: 'fromstation-1005',
+							inputValue: '1005',
 							checked: true
 						}, {
 							boxLabel: '台北',
 							name: 'fromstation',
-							inputValue: 'fromstation-1008'
+							inputValue: '1008'
 						}, {
 							boxLabel: '桃園',
 							name: 'fromstation',
-							inputValue: 'fromstation-1015'
+							inputValue: '1015'
 						}, {
 							boxLabel: '新竹',
 							name: 'fromstation',
-							inputValue: 'fromstation-1025'
+							inputValue: '1025'
 						}, {
 							boxLabel: '苗栗',
 							name: 'fromstation',
-							inputValue: 'fromstation-1305'
+							inputValue: '1305'
 						}, {
 							boxLabel: '銅鑼',
 							name: 'fromstation',
-							inputValue: 'fromstation-1308'
+							inputValue: '1308'
 						}
 					]
 				},{
@@ -48,27 +48,27 @@ Ext.create('Ext.FormPanel', {
 						{
 							boxLabel: '汐止',
 							name: 'tostation',
-							inputValue: 'tostation-1005'
+							inputValue: '1005'
 						}, {
 							boxLabel: '台北',
 							name: 'tostation',
-							inputValue: 'tostation-1008'
+							inputValue: '1008'
 						}, {
 							boxLabel: '桃園',
 							name: 'tostation',
-							inputValue: 'tostation-1015'
+							inputValue: '1015'
 						}, {
 							boxLabel: '新竹',
 							name: 'tostation',
-							inputValue: 'tostation-1025'
+							inputValue: '1025'
 						}, {
 							boxLabel: '苗栗',
 							name: 'tostation',
-							inputValue: 'tostation-1305'
+							inputValue: '1305'
 						}, {
 							boxLabel: '銅鑼',
 							name: 'tostation',
-							inputValue: 'tostation-1308',
+							inputValue: '1308',
 							checked: true
 						}
 					]
