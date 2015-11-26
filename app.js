@@ -140,6 +140,7 @@ function doQuery() {
 
 	//window.open(url + params, 100, 100);
 
+
 	var myData = {
 	    "users": [
 	        {
@@ -175,6 +176,17 @@ function doQuery() {
 	    ]
 	};
 
+	Ext.create('Ext.data.Store', {
+	    model: 'User',
+	    proxy: {
+	        type: 'ajax',
+	        url : myData,
+	        reader: {
+	            type: 'json',
+	            root: 'users'
+	        }
+	    },
+	});
 
 	Ext.define("User", {
 	    extend: 'Ext.data.Model',
