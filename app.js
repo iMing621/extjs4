@@ -174,7 +174,7 @@ function getURL() {
 	var totime       = Ext.getCmp('rg-totime').getChecked()[0].inputValue;
 
 	var params = 
-		'&searchdate='  + searchdate.getFullYear() + '/' + (searchdate.getMonth() +1) + '/' + searchdate.getDate() + 
+		'&searchdate='  + searchdate.getFullYear() + '/' + ((searchdate.getMonth() +1)>9)? '':'0' + (searchdate.getMonth() +1) + '/' +(searchdate.getDate()>9)? '':'0' +  searchdate.getDate() + 
 		'&fromstation=' + fromstation +
 		'&tostation='   + tostation +
 		'&trainclass=2&timetype=1' + 
