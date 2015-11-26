@@ -138,10 +138,10 @@ function doQuery() {
 		'&fromtime='    + fromtime +
 		'&totime='      + totime;
 
-	//window.open(url + params, 100, 100);
+	window.open(url + params, 100, 100);
 
 
-	var myData = {
+	/*var myData = {
 	    "users": [
 	        {
 	            "id": 123,
@@ -259,5 +259,5 @@ function doQuery() {
 	            });
 	        });
 	    }
-	});
+	});*/
 }
