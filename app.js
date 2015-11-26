@@ -17,6 +17,10 @@ Ext.create('Ext.FormPanel', {
 							inputValue: '1005',
 							checked: true
 						}, {
+							boxLabel: '汐科',
+							name: 'fromstation',
+							inputValue: '1031'
+						}, {
 							boxLabel: '台北',
 							name: 'fromstation',
 							inputValue: '1008'
@@ -49,6 +53,10 @@ Ext.create('Ext.FormPanel', {
 							boxLabel: '汐止',
 							name: 'tostation',
 							inputValue: '1005'
+						}, {
+							boxLabel: '汐科',
+							name: 'tostation',
+							inputValue: '1031'
 						}, {
 							boxLabel: '台北',
 							name: 'tostation',
