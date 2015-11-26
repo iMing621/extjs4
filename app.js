@@ -105,8 +105,9 @@ Ext.create('Ext.FormPanel', {
 					text: 'Query',
 					formBind: true,
 					handler: function(btn, evt){
-						console.debug(Ext.getCmp('rg-fromstation').getChecked()[0].inputValue);
-						console.debug(Ext.getCmp('searchdate').getValue());
+						//console.debug(Ext.getCmp('rg-fromstation').getChecked()[0].inputValue);
+						//console.debug(Ext.getCmp('searchdate').getValue());
+						getURL();
 					}
 				}]
 		});
@@ -159,3 +160,22 @@ Ext.create('Ext.FormPanel', {
 });*/
 
 });
+
+function getURL() {
+	var url = "http://twtraffic.tra.gov.tw/twrail/SearchResult.aspx?searchtype=0";
+	var fromstation  = Ext.getCmp('rg-fromstation').getChecked()[0].inputValue;
+	var tostation    = Ext.getCmp('rg-tostation').getChecked()[0].inputValue;
+	var searchdate   = Ext.getCmp('searchdate').getValue();
+	var fromtime     = Ext.getCmp('rg-fromtime').getChecked()[0].inputValue;
+	var totime       = Ext.getCmp('rg-totime').getChecked()[0].inputValue;
+
+	var params = 
+		'&searchdate='  + searchdate +
+		'&fromstation=' + fromstation +
+		'&tostation='   + tostation +
+		'&trainclass=2&timetype=1' + 
+		'&fromtime='    + fromtime +
+		'&totime='      + totime;
+
+	window.open(url + params, 100, 100);
+}
