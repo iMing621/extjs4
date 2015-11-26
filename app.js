@@ -75,7 +75,8 @@ Ext.create('Ext.FormPanel', {
 				},{
 					id: 'searchdate',
 					xtype: 'datepicker',
-					minDate: new Date()
+					minDate: new Date(),
+					format: 'Y/m/d'
 				},{
 					id: 'rg-fromtime',
 					xtype: 'radiogroup',
