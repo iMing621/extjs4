@@ -76,6 +76,28 @@ Ext.create('Ext.FormPanel', {
 					id: 'searchdate',
 					xtype: 'datepicker',
 					minDate: new Date()
+				},{
+					id: 'rg-fromtime',
+					xtype: 'radiogroup',
+					fieldLabel: '起',
+					vertical: true,
+					items: [
+						{
+							boxLabel: '18:00',
+							inputValue: '1800'
+						}
+					]
+				},{
+					id: 'rg-totime',
+					xtype: 'radiogroup',
+					fieldLabel: '迄',
+					vertical: true,
+					items: [
+						{
+							boxLabel: '19:00',
+							inputValue: '1900'
+						}
+					]
 				}],
 
 				buttons:
