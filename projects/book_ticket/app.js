@@ -1,4 +1,4 @@
-Ext.onReady(function() {
+﻿Ext.onReady(function() {
 		
 Ext.create('Ext.FormPanel', { 
 		renderTo: Ext.getBody(),
@@ -93,9 +93,15 @@ Ext.create('Ext.FormPanel', {
 					vertical: true,
 					items: [
 						{
+							boxLabel: '17:00',
+							inputValue: '1700'
+						},{
 							boxLabel: '18:00',
 							inputValue: '1800',
 							checked: true
+						},{
+							boxLabel: '19:00',
+							inputValue: '1900'
 						}
 					]
 				},{
@@ -108,6 +114,12 @@ Ext.create('Ext.FormPanel', {
 							boxLabel: '19:00',
 							inputValue: '1900',
 							checked: true
+						},{
+							boxLabel: '20:00',
+							inputValue: '2000'
+						},{
+							boxLabel: '21:00',
+							inputValue: '2100'
 						}
 					]
 				}],
